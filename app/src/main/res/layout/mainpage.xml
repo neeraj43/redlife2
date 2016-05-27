@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <requestFocus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:text="Donate Blood"
+        android:id="@+id/b1"
+        android:layout_gravity="center_horizontal"
+        android:onClick="DonatesBlood" />
+
+    <Button
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:text="Need Blood"
+        android:id="@+id/b2"
+        android:layout_gravity="center_horizontal"
+        android:onClick="NeedBlood" />
+
+    <Button
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:text="NearBy Blood Banks"
+        android:id="@+id/button3"
+        android:layout_gravity="center_horizontal"
+        android:onClick="BloodBanks" />
+
+    <Button
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:id="@+id/b5"
+        android:layout_gravity="center_horizontal"
+        android:onClick="History" />
+
+    <Button
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:text="How to use this app"
+        android:id="@+id/b6"
+        android:layout_gravity="center_horizontal"
+        android:onClick="AppUse" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Know more about Blood Donation"
+        android:id="@+id/b7"
+        android:layout_gravity="center_horizontal"
+        android:onClick="Knowledge" />
+
+    <Button
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/b8"
+        android:layout_gravity="center_horizontal"
+        android:onClick="Search" />
+
+    <Button
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:text="Eligibility Check"
+        android:id="@+id/b4"
+        android:layout_gravity="center_horizontal"
+        android:onClick="Check" />
+
+
+</LinearLayout>
