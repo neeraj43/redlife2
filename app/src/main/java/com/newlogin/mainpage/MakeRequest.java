@@ -14,7 +14,7 @@ import com.newlogin.RegisterUserClass;
 
 import java.util.HashMap;
 
-public class DonatesBlood extends AppCompatActivity implements View.OnClickListener {
+public class MakeRequest extends AppCompatActivity implements View.OnClickListener {
 
     private EditText editTextName;
     private EditText editTextbloodgrp;
@@ -24,7 +24,7 @@ public class DonatesBlood extends AppCompatActivity implements View.OnClickListe
 
     private Button buttonRegister;
 
-    private static final String REGISTER_URL = "http://192.168.1.102/android/donor.php";
+    private static final String REGISTER_URL = "http://192.168.1.102/android/reciever.php";
 
 
     @Override
@@ -70,7 +70,7 @@ public class DonatesBlood extends AppCompatActivity implements View.OnClickListe
             @Override
             protected void onPreExecute() {
                 super.onPreExecute();
-                loading = ProgressDialog.show(DonatesBlood.this, "Please Wait", null, true, true);
+                loading = ProgressDialog.show(MakeRequest.this, "Please Wait", null, true, true);
             }
 
             @Override

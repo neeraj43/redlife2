@@ -1,9 +1,12 @@
 package com.newlogin.mainpage;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -67,5 +70,25 @@ public class NeedBlood extends Activity implements ListAdapter.customButtonListe
         });
 
 
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.req, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.makeRequest) {
+            BloodRequest();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void BloodRequest() {
+
+        Intent i=new Intent(this,MakeRequest.class);
+        this.startActivity(i);
     }
 }
