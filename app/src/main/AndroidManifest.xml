@@ -57,6 +57,11 @@
             android:launchMode="singleTop" />
 
         <activity
+            android:name=".mainpage.Knowledge"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+
+        <activity
             android:name=".mainpage.location.GooglePlacesActivity"
             android:label="@string/app_name">
 

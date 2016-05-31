@@ -21,6 +21,17 @@ import com.newlogin.mainpage.Knowledge;
 import com.newlogin.mainpage.NeedBlood;
 import com.newlogin.mainpage.location.GooglePlacesActivity;
 
+import org.apache.http.NameValuePair;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.protocol.HTTP;
+
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+
 
 public class MainPage  extends Activity {
 
@@ -45,10 +56,28 @@ public class MainPage  extends Activity {
 
 
     }
-    public void History(View v){
+
+    public void History(View v) throws UnsupportedEncodingException {
+        SharedPreferences sharedPreferences = getSharedPreferences(Config.SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        String email = sharedPreferences.getString(Config.EMAIL_SHARED_PREF,"Not Available");
+
+        HttpClient client=new DefaultHttpClient();
+        HttpPost getMethod=new HttpPost("http://192.168.1.102/history/json.php");
+        ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
+        nameValuePairs.add(new BasicNameValuePair("name","n@m.c"));
+
+        getMethod.setEntity(new UrlEncodedFormEntity(nameValuePairs, HTTP.UTF_8));
+        try {
+            client.execute(getMethod);
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         Intent i=new Intent(this,History.class);
         this.startActivity(i);
+
 
 
     }

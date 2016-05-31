@@ -72,6 +72,6 @@
         <string name="register_here">register_here</string>
         <string name="GetLocation">GetLocation</string>
 
-
+    <string name="player_error">Error initializing YouTube player</string>
 
 </resources>

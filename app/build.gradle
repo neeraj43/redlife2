@@ -29,9 +29,7 @@ dependencies {
     compile 'com.google.android.gms:play-services:8.1.0'
     compile files('src/main/gcm/gcm.jar')
     compile 'com.google.android.gms:play-services-appindexing:8.1.0'
-    compile group: 'org.apache.httpcomponents' , name: 'httpclient-android' , version: '4.3.5.1'
+    compile 'org.apache.httpcomponents:httpclient-android:4.3.5.1'
 
-
-
-
+    compile files('src/main/libs/YouTubeAndroidPlayerApi.jar')
 }
