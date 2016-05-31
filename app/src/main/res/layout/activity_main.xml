@@ -1,56 +1,140 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<?xml version="1.0"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="215dp"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/Email"
-        android:id="@+id/textView2"
-        android:layout_weight="0.04" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/et1"
-        android:layout_weight="0.04"
-        android:hint="@string/Id" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#e8e8e7"
+        android:orientation="vertical"
+        android:weightSum="1">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="password"
-        android:id="@+id/textView3"
-        android:layout_weight="0.04" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/et2"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.04"
-        android:hint="@string/password"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:background="#b7b7b1"
+            android:orientation="horizontal"
+            android:weightSum="1">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Login"
-        android:id="@+id/buttonLogin"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.04"
-        android:onClick="onClick" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/redlife_intent"
+                android:layout_weight="0.05" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/register_here"
-        android:id="@+id/button"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.04"
-        android:onClick="register" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="25dp"
+                android:text="RedLife"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
 
-</LinearLayout>
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/redlife_intent"
+                android:layout_weight="0.36" />
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="294dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="#e8e8e7"
+                android:hint="Username"
+                android:paddingLeft="5dp"
+                android:elevation="1dp" />
+
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="297dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="#e8e8e7"
+                android:hint="Password"
+                android:paddingLeft="5dp"
+                android:editable="true"
+                android:elevation="1dp" />
+
+
+            <Button
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:onClick="buttonLogin"
+                android:text="@string/Login"
+                android:textColor="#000000"
+                android:textSize="19sp"
+                android:layout_weight="0.06"
+                android:textStyle="bold"
+                android:typeface="normal"
+                android:textAllCaps="false"
+                android:elevation="3dp"
+                android:id="@+id/buttonLogin" />
+
+            <Button
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="@string/register"
+                android:textColor="#000000"
+                android:textSize="19sp"
+                android:layout_weight="0.06"
+                android:textStyle="bold"
+                android:id="@+id/button"
+                android:textAllCaps="false"
+                android:elevation="3dp" />
+
+            <Button
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="About RedLife"
+                android:textColor="#000000"
+                android:textSize="19sp"
+                android:layout_weight="0.06"
+                android:textStyle="bold"
+                android:id="@+id/button2"
+                android:textAllCaps="false"
+                android:onClick="aboutUs"
+                android:elevation="3dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
