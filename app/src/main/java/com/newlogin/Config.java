@@ -7,7 +7,7 @@ import android.app.Application;
  */
 public class Config extends Application {
     //URL to our login.php file
-    public static final String LOGIN_URL = "http://192.168.1.102/android/login.php";
+    public static final String LOGIN_URL = "http://192.168.1.5/android/login.php";
 
     //Keys for email and password as defined in our $_POST['key'] in login.php
     public static final String KEY_EMAIL = "email";

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Android Login and Registration</string>
+    <string name="app_name">RedLife</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
     <string name="hint_name">Fullname</string>
@@ -64,12 +64,12 @@
         <string name="string_choose_username">Choose your username</string>
         <string name="string_choose_password">Choose your password</string>
         <string name="string_enter_email">Enter your email</string>
-        <string name="button_register">Register</string>
+        <string name="register">Register</string>
         <string name="Login">Login</string>
         <string name="Email">Email</string>
         <string name="Id">Id</string>
         <string name="password">password</string>
-        <string name="register_here">register_here</string>
+
         <string name="GetLocation">GetLocation</string>
 
 

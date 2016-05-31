@@ -20,7 +20,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
 
     private Button buttonRegister;
 
-    private static final String REGISTER_URL = "http://192.168.1.102/android/reg.php";
+    private static final String REGISTER_URL = "http://192.168.1.5/android/reg.php";
 
 
     @Override
